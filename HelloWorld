@@ -1,0 +1,16 @@
+package com.helloworlds.spark
+
+import org.apache.spark.{SparkConf, SparkContext}
+
+object test{
+  def main(args:Array[String]): Unit= {
+
+    val conf = new SparkConf()
+    conf.setMaster("local")
+    conf.setAppName("test")
+    val sc = new SparkContext(conf)
+
+    println("Hello World.....!!!")
+
+  }
+}
